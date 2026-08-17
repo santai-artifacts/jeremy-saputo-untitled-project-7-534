@@ -9,11 +9,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #ffffff;
-    --panel: #f5f6f8;
-    --grid-a: #f0f1f4;
-    --grid-b: #e9ebef;
-    --border: #e3e6eb;
+    --bg: #ffe3f1;
+    --panel: #fff2f8;
+    --grid-a: #ffd9ec;
+    --grid-b: #ffcfe6;
+    --border: #ffc2de;
     --accent: #ff3ea5;
     --accent-dim: #c21e78;
     --food: #f5a623;
@@ -29,7 +29,7 @@
   }
 
   body {
-    background: radial-gradient(1200px 800px at 50% -10%, #fff0f8 0%, var(--bg) 55%);
+    background: radial-gradient(1200px 800px at 50% -10%, #fff0f7 0%, var(--bg) 55%);
     color: var(--text);
     font-family: 'Space Grotesk', system-ui, sans-serif;
     display: flex;
@@ -125,7 +125,7 @@
     position: absolute;
     inset: 12px;
     border-radius: 10px;
-    background: rgba(255, 255, 255, 0.86);
+    background: rgba(255, 242, 248, 0.88);
     backdrop-filter: blur(4px);
     display: flex;
     flex-direction: column;
@@ -361,7 +361,7 @@
   function drawGrid() {
     for (let y = 0; y < GRID; y++) {
       for (let x = 0; x < GRID; x++) {
-        ctx.fillStyle = (x + y) % 2 === 0 ? '#f0f1f4' : '#e9ebef';
+        ctx.fillStyle = (x + y) % 2 === 0 ? '#ffd9ec' : '#ffcfe6';
         ctx.fillRect(x * CELL, y * CELL, CELL, CELL);
       }
     }
